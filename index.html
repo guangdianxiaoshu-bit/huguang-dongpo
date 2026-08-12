@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#f7f3ea">
-<meta name="description" content="西湖晨记：从淡妆浓抹的湖光里，读懂苏轼的一生。">
-<title>湖光晓悟东坡 · 西湖晨记</title>
+<meta name="description" content="两篇随笔：湖光晓悟东坡、我的宝贝。">
+<title>文章</title>
 <style>
   :root{
     --paper:#f7f3ea;
@@ -24,39 +24,24 @@
     font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","SimSun",serif;
     background:var(--paper);
     color:var(--ink);
-    line-height:2.05;
+    line-height:1.9;
     -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:640px;margin:0 auto;padding:0 24px 72px}
 
-  /* ===== 顶部水墨湖山横幅 ===== */
   .hero{max-width:640px;margin:0 auto}
   .hero svg{display:block;width:100%;height:auto}
 
-  /* ===== 标题区 ===== */
-  .title-wrap{padding:26px 0 6px;text-align:center}
+  .title-wrap{padding:30px 0 8px;text-align:center}
   .kicker{font-size:12px;letter-spacing:.55em;text-indent:.55em;color:var(--ink-soft);margin-bottom:16px}
   h1{
     font-family:"Kaiti SC","KaiTi","STKaiti","Noto Serif SC",serif;
     font-weight:600;
-    font-size:36px;
-    letter-spacing:.14em;
-    text-indent:.14em;
+    font-size:38px;
+    letter-spacing:.3em;
+    text-indent:.3em;
     color:var(--ink);
     line-height:1.5;
-    display:flex;align-items:center;justify-content:center;gap:10px;
-  }
-  .seal{
-    font-family:"Songti SC","SimSun",serif;
-    font-size:11px;
-    letter-spacing:.12em;
-    text-indent:.12em;
-    color:#b3563a;
-    border:1.5px solid #b3563a;
-    border-radius:4px;
-    padding:2px 5px;
-    transform:rotate(-4deg);
-    opacity:.92;
   }
   .title-sub{
     margin-top:14px;
@@ -66,60 +51,54 @@
     color:var(--ink-soft);
   }
 
-  /* ===== 正文 ===== */
-  article{padding-top:26px}
-  article p{font-size:17.5px;margin:0 0 28px;letter-spacing:.02em;text-align:justify}
-  p.lead::first-letter{
-    float:left;
-    font-family:"Kaiti SC","KaiTi","STKaiti",serif;
-    font-size:46px;
-    line-height:1;
-    margin:7px 9px 0 0;
-    color:var(--lake-deep);
+  .list{padding-top:34px}
+  .card{
+    display:flex;align-items:center;gap:16px;
+    background:#fff;
+    padding:20px 18px;
+    margin:0 0 16px;
+    border-radius:14px;
+    border:1px solid #eee6d6;
+    text-decoration:none;color:inherit;
+    transition:border-color .2s, box-shadow .2s, transform .2s;
   }
-  em.hl{
-    font-style:normal;
-    font-family:"Kaiti SC","KaiTi","STKaiti",serif;
-    color:var(--lake-deep);
-    border-bottom:1px dashed var(--lake-soft);
-    padding-bottom:1px;
-    white-space:nowrap;
+  .card:active{transform:scale(.985)}
+  .card:hover{border-color:var(--lake-soft);box-shadow:0 4px 18px rgba(93,111,102,.08)}
+  .ic{
+    width:52px;height:52px;border-radius:13px;flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+    font-size:26px;
   }
-  em.cheer{
-    font-style:normal;
-    font-family:"Kaiti SC","KaiTi","STKaiti",serif;
-    font-size:1.35em;
-    color:var(--gold);
-    letter-spacing:.1em;
-  }
-  p.ending{
+  .ic.a{background:#e4f0ec}
+  .ic.b{background:#f6e4dc}
+  .if{flex:1;min-width:0}
+  .if .t{font-size:19px;font-weight:600;font-family:"Kaiti SC","KaiTi","STKaiti",serif;letter-spacing:.06em;color:#2f2d28}
+  .if .s{font-size:12.5px;color:var(--ink-soft);margin-top:3px;letter-spacing:.05em}
+  .ar{font-size:20px;color:var(--lake-soft);flex-shrink:0}
+
+  .tip{
+    margin-top:34px;padding:14px 18px;
+    border:1px dashed var(--line);border-radius:12px;
+    font-size:12.5px;color:var(--ink-soft);
+    letter-spacing:.06em;line-height:2;
     text-align:center;
-    font-family:"Kaiti SC","KaiTi","STKaiti",serif;
-    font-size:19px;
-    letter-spacing:.05em;
-    color:var(--lake-deep);
-    line-height:2.1;
   }
 
-  /* ===== 波纹分隔 ===== */
-  .divider{display:flex;align-items:center;justify-content:center;gap:16px;margin:42px 0 36px}
-  .divider::before,.divider::after{
-    content:"";flex:1;max-width:96px;height:1px;
-    background:linear-gradient(90deg,transparent,var(--line),transparent);
-  }
-  .divider svg{width:34px;height:22px;flex-shrink:0}
-
-  /* ===== 页脚 ===== */
   footer{
-    margin-top:52px;padding-top:26px;
+    margin-top:48px;padding-top:26px;
     border-top:1px solid var(--line);
     text-align:center;
     font-size:12.5px;
     letter-spacing:.22em;
     color:var(--ink-soft);
   }
-  footer .seal{margin-bottom:12px}
-  footer .foot-line{margin-top:8px;font-size:11px;letter-spacing:.3em;opacity:.75}
+  footer .seal{
+    font-family:"Songti SC","SimSun",serif;
+    font-size:11px;letter-spacing:.12em;text-indent:.12em;
+    color:#b3563a;border:1.5px solid #b3563a;border-radius:4px;
+    padding:2px 5px;transform:rotate(-4deg);opacity:.92;
+    display:inline-block;margin-bottom:12px;
+  }
 </style>
 </head>
 <body>
@@ -151,59 +130,35 @@
 
 <div class="wrap">
   <header class="title-wrap">
-    <div class="kicker">西 湖 · 晨 光 漫 记</div>
-    <h1>湖光晓悟东坡<span class="seal">晓悟</span></h1>
-    <div class="title-sub">一淡一浓，皆是人生</div>
+    <div class="kicker">个 人 随 笔</div>
+    <h1>文章</h1>
+    <div class="title-sub">湖 光 与 旧 衣</div>
   </header>
 
-  <article>
-    <p class="lead">早上来得很早，又是旅游淡季，西湖边没有什么人，只有几个老人晨跑，几个青年晨练。</p>
+  <div class="list">
+    <a class="card" href="dongpo.html">
+      <div class="ic a">🌅</div>
+      <div class="if">
+        <div class="t">湖光晓悟东坡</div>
+        <div class="s">西湖晨记 · 从淡妆浓抹里读懂苏轼的一生</div>
+      </div>
+      <span class="ar">›</span>
+    </a>
+    <a class="card" href="baobei.html">
+      <div class="ic b">🧥</div>
+      <div class="if">
+        <div class="t">我的宝贝</div>
+        <div class="s">年关旧衣 · 一件磨破袖口的冲锋衣，一本纪念册</div>
+      </div>
+      <span class="ar">›</span>
+    </a>
+  </div>
 
-    <p>我漫步西湖，薄雾笼罩湖面，水波清浅柔和，远山朦胧素雅。清风拂过湖面，漾开细碎波纹，静谧又清雅。此情此景，苏轼的<em class="hl">“欲把西湖比西子，淡妆浓抹总相宜”</em>一句蓦然出现在脑海里。</p>
-
-    <p>从前只死记诗句，此刻望着干净淡雅的西湖，才读懂淡妆的意境。一只野鸭无声钻入水里，又从不远处浮现，荡开层层涟漪。</p>
-
-    <p>待到霞光初现，铺满水面，湖水绚烂得让人睁不开眼睛，便是西湖的浓妆。</p>
-
-    <p>薄雾慢慢散去，朝阳升起一半，柔和的朝霞铺满湖面，微风拂过秀发，我蹲下来伸手拨弄西湖的湖水，凉凉的水汽混着清晨的草叶味道，我深深吸了一口气。</p>
-
-    <p>这湖的一淡一浓，何尝不是苏轼一生的写照，他经历过人生的大起大落，顺境时赏山河盛景，逆境也能于人间烟火里寻找乐趣，无论如何，他总能看到美好。</p>
-
-    <p>好羡慕苏轼的心境。我这么想着。</p>
-
-    <div class="divider" aria-hidden="true">
-      <svg viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2,6 C8,1 14,11 17,6 C20,1 26,11 32,6" stroke="#a9c6bd" stroke-width="2" stroke-linecap="round"/>
-        <path d="M2,14 C8,9 14,19 17,14 C20,9 26,19 32,14" stroke="#c8dbd4" stroke-width="2" stroke-linecap="round"/>
-      </svg>
-    </div>
-
-    <p>心底的烦恼突然浮上来。昨天卷子发下来，分数刺眼。我一个人待着，趴在桌上，任谁来安慰我都没用，我就那样沉浸在自责里，把卷子揉成一团又展开，又再揉成一团。</p>
-
-    <p>如果是苏轼，他会怎么样？</p>
-
-    <p>苏轼被贬到黄州的时候，穷得连好肉都吃不起。他怎么办？他把没人要的猪肉拿回来，慢火炖了一整天，做成东坡肉，还写了首《猪肉颂》。<em class="hl">“黄州好猪肉，价贱如泥土”</em>，他不是在写菜谱，他是在说：生活把我的好东西都拿走了，没关系，我就拿剩下的这点东西，也能捣鼓出滋味来。</p>
-
-    <p>我好像错怪了他。苏轼也许不是天生的乐天派，只是他在一次次跌倒中学会了不去纠结和遗憾，静心做好该做的、能做的事情，负面情绪会自己跑掉。牛角尖都是自己主动钻的。</p>
-
-    <p>太阳已经完全升起来了，湖面金光灿灿。好像打破了水晶罩，各种声音一股脑儿地涌进了西湖，车声人声，西湖边鸟儿的啼鸣。<em class="cheer">“好！”</em>我在心底无声地呐喊，站起身伸了个懒腰，带着满身水汽和诗意，迈步回家。</p>
-
-    <div class="divider" aria-hidden="true">
-      <svg viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2,6 C8,1 14,11 17,6 C20,1 26,11 32,6" stroke="#a9c6bd" stroke-width="2" stroke-linecap="round"/>
-        <path d="M2,14 C8,9 14,19 17,14 C20,9 26,19 32,14" stroke="#c8dbd4" stroke-width="2" stroke-linecap="round"/>
-      </svg>
-    </div>
-
-    <p>回去的路上经过一家包子铺，热气涌出来，熏得玻璃都起了雾。我买了两个包子，边走边吃，肉馅有点烫，我哈着气，突然想叫苏轼尝尝。</p>
-
-    <p class="ending">下次我还会来，也许带着喜悦，也许带着忧愁，不管是什么情绪，我想西湖都会接纳我吧，实在不行，我就问问苏轼，看看他会怎么想。</p>
-  </article>
+  <div class="tip">两篇随笔 · 一湖一人<br>点击卡片阅读</div>
 
   <footer>
-    <span class="seal">湖光晓悟</span>
-    <div>湖光晓悟 · 西湖晨记</div>
-    <div class="foot-line">一 淡 一 浓 ， 皆 是 人 生</div>
+    <span class="seal">随笔</span>
+    <div>个 人 随 笔 集</div>
   </footer>
 </div>
 
