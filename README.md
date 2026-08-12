@@ -1,24 +1,25 @@
-# 湖光晓悟东坡
+# 个人随笔集
 
-一篇西湖晨记的移动端阅读展示页：从西湖的淡妆浓抹，读懂苏轼的一生。
+两篇随笔的移动端阅读展示页（静态单页，零外部依赖，移动端优先排版）。
 
-- 单文件静态页面，无任何外部依赖，直接双击 `index.html` 即可阅读
-- 移动端优先排版（宋体正文 / 楷体标题，纯系统字体栈）
-- 已配置 GitHub Pages 友好（`.nojekyll` 可加可不加，本页无 Jekyll 冲突内容）
+| 文件 | 内容 |
+|------|------|
+| `index.html` | 文章列表首页（入口） |
+| `dongpo.html` | 《湖光晓悟东坡》——西湖晨记，从淡妆浓抹里读懂苏轼的一生 |
+| `baobei.html` | 《我的宝贝》——一件磨破袖口、留有奶渍的大红冲锋衣，一本纪念册 |
+| `.nojekyll` | 禁用 Jekyll 处理 |
 
 ## 在线访问
 
-部署到 GitHub Pages 后，访问地址形如：
-
 ```
-https://<你的用户名>.github.io/huguang-dongpo/
+https://guangdianxiaoshu-bit.github.io/huguang-dongpo/
 ```
 
 ## 本地预览
 
+直接双击 `index.html`，或：
+
 ```powershell
-# 方法一：直接双击 index.html
-# 方法二：起本地服务器
 python -m http.server 8000 --directory .
-# 然后浏览器打开 http://localhost:8000
+# 打开 http://localhost:8000
 ```
