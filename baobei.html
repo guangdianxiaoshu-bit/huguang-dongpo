@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f8f3ea">
+<meta name="description" content="一件磨破袖口、留有奶渍的大红冲锋衣，是我的纪念册。">
+<title>我的宝贝</title>
+<style>
+  :root{
+    --paper:#f8f3ea;
+    --paper-deep:#f0e6d6;
+    --ink:#3d3b36;
+    --ink-soft:#7a7468;
+    --brand:#a8432e;
+    --brand-deep:#8a3524;
+    --brand-soft:#d8a08f;
+    --gold:#b97a2e;
+    --line:#e3d5c2;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","SimSun",serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:2.05;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:0 24px 72px}
+
+  /* ===== 顶部暖霞横幅 ===== */
+  .hero{max-width:640px;margin:0 auto}
+  .hero svg{display:block;width:100%;height:auto}
+
+  /* ===== 标题区 ===== */
+  .title-wrap{padding:26px 0 6px;text-align:center}
+  .kicker{font-size:12px;letter-spacing:.55em;text-indent:.55em;color:var(--ink-soft);margin-bottom:16px}
+  h1{
+    font-family:"Kaiti SC","KaiTi","STKaiti","Noto Serif SC",serif;
+    font-weight:600;
+    font-size:36px;
+    letter-spacing:.14em;
+    text-indent:.14em;
+    color:var(--ink);
+    line-height:1.5;
+    display:flex;align-items:center;justify-content:center;gap:10px;
+  }
+  .seal{
+    font-family:"Songti SC","SimSun",serif;
+    font-size:11px;
+    letter-spacing:.12em;
+    text-indent:.12em;
+    color:#b3563a;
+    border:1.5px solid #b3563a;
+    border-radius:4px;
+    padding:2px 5px;
+    transform:rotate(-4deg);
+    opacity:.92;
+  }
+  .title-sub{
+    margin-top:14px;
+    font-size:13px;
+    letter-spacing:.28em;
+    text-indent:.28em;
+    color:var(--ink-soft);
+  }
+
+  /* ===== 正文 ===== */
+  article{padding-top:26px}
+  article p{font-size:17.5px;margin:0 0 28px;letter-spacing:.02em;text-align:justify}
+  p.lead::first-letter{
+    float:left;
+    font-family:"Kaiti SC","KaiTi","STKaiti",serif;
+    font-size:46px;
+    line-height:1;
+    margin:7px 9px 0 0;
+    color:var(--brand-deep);
+  }
+  em.hl{
+    font-style:normal;
+    font-family:"Kaiti SC","KaiTi","STKaiti",serif;
+    color:var(--brand-deep);
+    border-bottom:1px dashed var(--brand-soft);
+    padding-bottom:1px;
+  }
+  em.word{
+    font-style:normal;
+    font-family:"Kaiti SC","KaiTi","STKaiti",serif;
+    color:var(--brand);
+  }
+  p.ending{
+    text-align:center;
+    font-family:"Kaiti SC","KaiTi","STKaiti",serif;
+    font-size:19px;
+    letter-spacing:.05em;
+    color:var(--brand-deep);
+    line-height:2.1;
+  }
+
+  /* ===== 暖波纹分隔 ===== */
+  .divider{display:flex;align-items:center;justify-content:center;gap:16px;margin:42px 0 36px}
+  .divider::before,.divider::after{
+    content:"";flex:1;max-width:96px;height:1px;
+    background:linear-gradient(90deg,transparent,var(--line),transparent);
+  }
+  .divider svg{width:34px;height:22px;flex-shrink:0}
+
+  /* ===== 页脚 ===== */
+  footer{
+    margin-top:52px;padding-top:26px;
+    border-top:1px solid var(--line);
+    text-align:center;
+    font-size:12.5px;
+    letter-spacing:.22em;
+    color:var(--ink-soft);
+  }
+  footer .seal{margin-bottom:12px}
+  footer .foot-line{margin-top:8px;font-size:11px;letter-spacing:.3em;opacity:.75}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <svg viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="暖霞与远山，山间一道红飘带">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#f3e7d3"/>
+        <stop offset="1" stop-color="#f8f3ea"/>
+      </linearGradient>
+      <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+        <stop offset="0" stop-color="#f2d9a0"/>
+        <stop offset="1" stop-color="#e0b06e"/>
+      </radialGradient>
+    </defs>
+    <rect width="1200" height="300" fill="url(#sky)"/>
+    <circle cx="920" cy="92" r="60" fill="#e8c48a" opacity="0.22"/>
+    <circle cx="920" cy="92" r="34" fill="url(#sun)" opacity="0.92"/>
+    <path d="M0,178 C150,140 260,160 400,130 C540,100 660,142 800,120 C940,98 1060,132 1200,104 L1200,300 L0,300 Z" fill="#e5c9ab" opacity="0.72"/>
+    <path d="M0,214 C160,184 300,200 450,180 C600,160 740,196 900,176 C1030,160 1140,182 1200,170 L1200,300 L0,300 Z" fill="#d6ab87" opacity="0.85"/>
+    <path d="M0,256 C200,236 380,250 560,236 C740,222 900,242 1200,226 L1200,300 L0,300 Z" fill="#c08f6c"/>
+    <path d="M520,44 C620,96 730,84 800,132 C840,160 824,196 762,204 C700,212 634,182 588,150 C542,118 552,70 520,44 Z" fill="#a8432e" opacity="0.88"/>
+    <g stroke="#f7eee2" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.9">
+      <path d="M120,282 C240,274 340,288 460,280 C580,272 700,286 820,278"/>
+      <path d="M260,294 C380,286 480,300 600,292 C720,284 840,298 960,290"/>
+    </g>
+  </svg>
+</div>
+
+<div class="wrap">
+  <header class="title-wrap">
+    <div class="kicker">年 关 · 旧 衣 · 回 忆</div>
+    <h1>我的宝贝<span class="seal">宝贝</span></h1>
+    <div class="title-sub">一件旧外套，一本纪念册</div>
+  </header>
+
+  <article>
+    <p class="lead">过年啦，家里弥漫着坚果、水果等年货的香气，我们家正在进行大扫除，迎接新年的到来。<em class="word">“哎哎哎，别扔！”</em>我冲向正在收拾衣橱的爸爸，一把夺过他手里一件大红色的外套。</p>
+
+    <p><em class="word">“你这孩子，毛毛躁躁的。”</em>爸爸被我吓了一跳，不解地看着我，<em class="word">“这衣服，得有好几年了，你都穿不上了。”</em></p>
+
+    <p>我怀念地摸着衣服上几处磨损的痕迹，宝贝地把它摊开在床上。<em class="hl">“你看，这，这，这，这都是回忆啊！”</em></p>
+
+    <p>看，大衣的袖口位置已经磨破了，那时候我在英国游学，英国的天是灰的。刚下完雨，草地滑得像溜冰场。我穿着这件大红冲锋衣，迫不及待地冲了出去，没想到地面太滑了，我一个不留神，<em class="word">“哐当”</em>一声摔倒在地，下意识用手撑住地面——袖口就这样磨破了。我的外国伙伴托马斯随后赶到，弯着腰，笑得直不起身，笑够了，才扶我起来，见我疼得龇牙咧嘴，他才不笑了，故作严肃地说道：<em class="hl">“英国的天气可和你们中国不一样，我们这儿几乎天天下雨，地可滑了，要当心哦！”</em></p>
+
+    <p>我摔疼的地方稍微好了些，拍拍身上的泥，低头一看，啊，袖口磨破了！后来几天，只要天下雨，我走起路来就像模仿企鹅。摸到那块磨损，我又想起托马斯弯着腰大笑的样子了。</p>
+
+    <p>吃一堑长一智，我后来没有再摔过了，但每当看到袖口上的痕迹，就会想起这段令人哭笑不得的往事。</p>
+
+    <div class="divider" aria-hidden="true">
+      <svg viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2,6 C8,1 14,11 17,6 C20,1 26,11 32,6" stroke="#d8a08f" stroke-width="2" stroke-linecap="round"/>
+        <path d="M2,14 C8,9 14,19 17,14 C20,9 26,19 32,14" stroke="#e6c3b6" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <p>手指抚摸着布料，目光来到领口附近，那里有一块淡淡的白色印记，凑近了闻，记忆里的那股奶香飘了出来。英国之行的三年后，维也纳。</p>
+
+    <p>我们的管乐比赛圆满结束，大家高兴极了，在老师的带队下，管乐团瞬间化身<em class="word">“旅游团”</em>，在维也纳的各个景区之间奔波。中间我们去超市采购，超市里面有许多美食，还有我最爱的鲜奶。回酒店的路上，我有点儿口渴，迫不及待地拧开瓶盖，边走边大口喝了起来。</p>
+
+    <p>可一出超市，一大群人迎面走了过来。<em class="word">“哎呀！”</em>一个男孩撞到了我的肩膀，我一个趔趄，手里的牛奶洒了出来，被我心爱的冲锋衣<em class="word">“照单全收”</em>了。伴着一连串的<em class="word">“sorry”</em>，再看那男孩，已经找不到了。</p>
+
+    <p>当时我心疼极了，几个团友围过来安慰我，给我出主意，后来回到酒店我第一时间就把衣服洗了，可惜有一块印记洗不掉了。当时我还闷闷不乐了好几天，可是现在，摸着这块印记，我却有点庆幸了。</p>
+
+    <div class="divider" aria-hidden="true">
+      <svg viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2,6 C8,1 14,11 17,6 C20,1 26,11 32,6" stroke="#d8a08f" stroke-width="2" stroke-linecap="round"/>
+        <path d="M2,14 C8,9 14,19 17,14 C20,9 26,19 32,14" stroke="#e6c3b6" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <p>这样的故事还有许多，这件破旧的衣服，就像一本纪念册，记录着发生在我身上独特的回忆。</p>
+
+    <p>听完我的讲解，爸爸看着我的衣服，还是有些不解：<em class="word">“你这衣服又小又破，还留着干什么，真搞不懂你。”</em></p>
+
+    <p class="ending">我不理他，只是笑着把冲锋衣折叠好，踮脚放进了衣柜的最上层。<em>“你不懂就不懂呗，我懂就行了。”</em></p>
+  </article>
+
+  <footer>
+    <span class="seal">宝贝</span>
+    <div>我的宝贝 · 一件冲锋衣的纪念册</div>
+    <div class="foot-line">破 旧 的 衣 服 ， 独 特 的 回 忆</div>
+  </footer>
+</div>
+
+</body>
+</html>
