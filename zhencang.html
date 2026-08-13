@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f8f2e9">
+<meta name="description" content="一只平平无奇的泰迪熊，藏着圣诞夜失而复得、月光守护的故事。">
+<title>值得珍藏</title>
+<style>
+  :root{
+    --paper:#f8f2e9;
+    --paper-deep:#efe6d6;
+    --ink:#3d3b36;
+    --ink-soft:#7a7468;
+    --brand:#8a6b4a;
+    --brand-deep:#6b4f33;
+    --brand-soft:#c8ae8c;
+    --gold:#b97a2e;
+    --line:#e0d3bf;
+    --lake-deep:#6b4f33;
+    --lake-soft:#c8ae8c;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","SimSun",serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:2.05;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:0 24px 72px}
+
+  /* ===== 顶部夜色月光横幅 ===== */
+  .hero{max-width:640px;margin:0 auto}
+  .hero svg{display:block;width:100%;height:auto}
+
+  /* ===== 标题区 ===== */
+  .title-wrap{padding:26px 0 6px;text-align:center}
+  .kicker{font-size:12px;letter-spacing:.55em;text-indent:.55em;color:var(--ink-soft);margin-bottom:16px}
+  h1{
+    font-family:"Kaiti SC","KaiTi","STKaiti","Noto Serif SC",serif;
+    font-weight:600;
+    font-size:36px;
+    letter-spacing:.14em;
+    text-indent:.14em;
+    color:var(--ink);
+    line-height:1.5;
+    display:flex;align-items:center;justify-content:center;gap:10px;
+  }
+  .seal{
+    font-family:"Songti SC","SimSun",serif;
+    font-size:11px;
+    letter-spacing:.12em;
+    text-indent:.12em;
+    color:#b3563a;
+    border:1.5px solid #b3563a;
+    border-radius:4px;
+    padding:2px 5px;
+    transform:rotate(-4deg);
+    opacity:.92;
+  }
+  .title-sub{
+    margin-top:14px;
+    font-size:13px;
+    letter-spacing:.28em;
+    text-indent:.28em;
+    color:var(--ink-soft);
+  }
+
+  /* ===== 正文（统一版式：无首字下沉/无字体变化/仅下划线强调） ===== */
+  article{padding-top:26px}
+  article p{font-size:17.5px;margin:0 0 28px;letter-spacing:.02em;text-align:justify}
+  em.hl{
+    font-style:normal;
+    text-decoration:underline;
+    text-underline-offset:4px;
+  }
+
+  /* ===== 波纹分隔 ===== */
+  .divider{display:flex;align-items:center;justify-content:center;gap:16px;margin:42px 0 36px}
+  .divider::before,.divider::after{
+    content:"";flex:1;max-width:96px;height:1px;
+    background:linear-gradient(90deg,transparent,var(--line),transparent);
+  }
+  .divider svg{width:34px;height:22px;flex-shrink:0}
+
+  /* ===== 页脚 ===== */
+  footer{
+    margin-top:52px;padding-top:26px;
+    border-top:1px solid var(--line);
+    text-align:center;
+    font-size:12.5px;
+    letter-spacing:.22em;
+    color:var(--ink-soft);
+  }
+  footer .seal{margin-bottom:12px}
+  footer .foot-line{margin-top:8px;font-size:11px;letter-spacing:.3em;opacity:.75}
+  .back{margin:20px 0 -6px;text-align:center}
+  .back a{font-size:13px;letter-spacing:.2em;color:var(--lake-deep);text-decoration:none;border-bottom:1px dashed var(--lake-soft);padding-bottom:2px}
+  .back a:hover,.back a:active{border-color:var(--lake-deep)}
+  .home-btn{
+    display:inline-block;
+    margin-top:24px;
+    padding:11px 34px;
+    font-size:13px;
+    letter-spacing:.32em;
+    text-indent:.32em;
+    color:var(--lake-deep);
+    border:1px solid var(--lake-soft);
+    border-radius:999px;
+    text-decoration:none;
+    font-family:inherit;
+    transition:background .25s,color .25s,border-color .25s;
+  }
+  .home-btn:hover,.home-btn:active{background:var(--lake-deep);color:#fff;border-color:var(--lake-deep)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <svg viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="夜色月光：圆月、星星、远山与波纹">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#e7e3ee"/>
+        <stop offset="1" stop-color="#f8f2e9"/>
+      </linearGradient>
+      <radialGradient id="moon" cx="0.5" cy="0.5" r="0.5">
+        <stop offset="0" stop-color="#f9efd2"/>
+        <stop offset="1" stop-color="#eccf9c"/>
+      </radialGradient>
+    </defs>
+    <rect width="1200" height="300" fill="url(#sky)"/>
+    <circle cx="208" cy="84" r="54" fill="#ead9ae" opacity="0.3"/>
+    <circle cx="208" cy="84" r="30" fill="url(#moon)" opacity="0.95"/>
+    <g fill="#d8c69e">
+      <circle cx="480" cy="58" r="3" opacity="0.9"/>
+      <circle cx="760" cy="96" r="2.4" opacity="0.7"/>
+      <circle cx="1010" cy="52" r="2.8" opacity="0.85"/>
+      <circle cx="640" cy="132" r="2" opacity="0.6"/>
+    </g>
+    <path d="M0,178 C150,140 260,160 400,130 C540,100 660,142 800,120 C940,98 1060,132 1200,104 L1200,300 L0,300 Z" fill="#b8aebf" opacity="0.72"/>
+    <path d="M0,214 C160,184 300,200 450,180 C600,160 740,196 900,176 C1030,160 1140,182 1200,170 L1200,300 L0,300 Z" fill="#9c8ba1" opacity="0.85"/>
+    <path d="M0,256 C200,236 380,250 560,236 C740,222 900,242 1200,226 L1200,300 L0,300 Z" fill="#7d6a58"/>
+    <g stroke="#f3ede0" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.9">
+      <path d="M120,282 C240,274 340,288 460,280 C580,272 700,286 820,278"/>
+      <path d="M260,294 C380,286 480,300 600,292 C720,284 840,298 960,290"/>
+    </g>
+  </svg>
+</div>
+
+<div class="wrap">
+  <nav class="back"><a href="index.html">← 回到首页</a></nav>
+  <header class="title-wrap">
+    <div class="kicker">圣 诞 · 小 熊 · 月 光</div>
+    <h1>值得珍藏<span class="seal">珍藏</span></h1>
+    <div class="title-sub">一只旧熊，一只新熊，一片月光</div>
+  </header>
+
+  <article>
+    <p>别人眼里的珍藏，也许是金银珠宝，或是价值不菲的艺术品。但我心中最值得珍藏的，是一只平平无奇的泰迪熊。它旧旧的，毛没有以前软，香味也淡了很多。但每次我捏捏它屁股那里，手感沙沙的，就会想起那个圣诞节。</p>
+
+    <p>几年前临近圣诞夜的下午，小小的我抱着形影不离的泰迪熊，拉着爷爷的手去游乐园玩，我都玩疯了，一会儿在蹦床上蹦，一会儿坐在旋转海豚上大声欢呼，一会儿又从高高的滑梯滑下来，一直从中午玩到黄昏。“哎哟，爷爷看着都害怕。”爷爷给我擦汗的时候夸张地说，逗得我哈哈大笑。</p>
+
+    <p>回家之后，我第一时间找到妈妈，滔滔不绝地讲述着游乐园里发生的趣事。正当我手舞足蹈激动时，妈妈突然打断我：“宝贝，你的泰迪熊呢？”<em class="hl">“泰迪熊，在我的书包里呀。”</em></p>
+
+    <p>我兴冲冲地去书包里翻找，结果，什么都没有，一下子就慌了，拉着爷爷回忆，才想起来——我把最心爱的泰迪熊落在公交车的窗台上了。</p>
+
+    <p>“啊！我的泰迪熊！”我一时间慌了神，拉着妈妈的手，让她赶紧打电话给公交公司，可都过去好久了，工作人员说找回的希望渺茫，我瘫坐在地上，积蓄已久的眼泪喷涌而出，抱着妈妈的腿一边哭一边喊：“妈，妈妈，捡到小熊的人会对它好吗？司机会不会把它丢垃圾桶，他会不会把小熊给小狗玩？”</p>
+
+    <p>种种可怕的画面从我脑中闪过。我哭得更凶了，窗外的小鸟都被吓得飞走了。我哭得上气不接下气，妈妈把我揽进怀里，轻拍我的后背，声音低下来，温柔地说：<em class="hl">“宝贝别哭啦，泰迪熊那么可爱，捡走它的人肯定会好好对它的……”</em></p>
+
+    <p>“真，真的吗……”我哽咽了好久，才渐渐止住眼泪。接下去的日子里，我已经接受了泰迪熊回不来的事实，可我一直沉浸在失去小熊的悲伤中，连即将到来的圣诞节，我也提不起兴致。</p>
+
+    <div class="divider" aria-hidden="true">
+      <svg viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2,6 C8,1 14,11 17,6 C20,1 26,11 32,6" stroke="#c8ae8c" stroke-width="2" stroke-linecap="round"/>
+        <path d="M2,14 C8,9 14,19 17,14 C20,9 26,19 32,14" stroke="#dcc9ad" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <p>一个包装精美的礼盒摆在客厅的桌子上，我一回家就看到了它，妈妈眨了眨眼，兴奋地说：“你猜猜，这里装的是什么？”</p>
+
+    <p>可我没有心情猜，沉默地摇了摇头，就在打开礼盒的那一瞬间——“啊！”我瞪大了眼睛，不敢相信我看到的，<em class="hl">“小熊回来了？”</em>我把它抱起来，左看右看，高兴得不得了，可再一看，才发现这并非我遗失的那一只。</p>
+
+    <p>妈妈看着我，声音里有一点儿歉意：“我找了好久，都没有找到你那个泰迪熊，就找了个最像的送给你，你喜欢吗？”</p>
+
+    <p>我愣了愣，仔细看这只小熊，它的毛软极了，手里捧着一颗爱心，身上还有一股香香的味道。它跟我的小熊一号不一样，可它也很可爱，而且——我鼻子一酸，抓着小熊给了妈妈一个大大的拥抱：<em class="hl">“谢谢你，妈妈！”</em>妈妈把我抱在怀里，手臂紧了紧，“好啦，以后就由这只小熊守护你的梦咯。”</p>
+
+    <p>新的小熊在我枕边安了家。出去旅游我会把它放进小书包，只露出一个脑袋。晚上睡觉前，我会跟它讲悄悄话——虽然它只会傻傻地看着我，手里那颗爱心永远鲜红。</p>
+
+    <p>但我心里还有一个角落，给那只旧的留着。</p>
+
+    <div class="divider" aria-hidden="true">
+      <svg viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2,6 C8,1 14,11 17,6 C20,1 26,11 32,6" stroke="#c8ae8c" stroke-width="2" stroke-linecap="round"/>
+        <path d="M2,14 C8,9 14,19 17,14 C20,9 26,19 32,14" stroke="#dcc9ad" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <p>月光洒在被子上。我把小熊二号搂在怀里，它毛软软的，屁股那里一捏就沙沙响。半梦半醒之间，我又想起了那只旧的——不知道它现在在哪儿。也许被另一个小孩抱在怀里，也许正坐在某辆公交车的窗边看风景。</p>
+
+    <p><em class="hl">“再见。”</em>我轻轻地说，望着窗外月光，希望月光也照在它的身上。</p>
+
+    <p>翻了个身，我把怀里的小熊搂得更紧了一点。桂花树的香气伴着月光照进来，<em class="hl">小熊们守护着我的梦。</em></p>
+  </article>
+
+  <footer>
+    <span class="seal">珍藏</span>
+    <div>值得珍藏 · 圣诞夜的小熊</div>
+    <div class="foot-line">小 熊 们 守 护 着 我 的 梦</div>
+    <a class="home-btn" href="index.html">回到首页</a>
+  </footer>
+</div>
+
+</body>
+</html>
