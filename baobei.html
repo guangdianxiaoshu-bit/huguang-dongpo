@@ -94,6 +94,24 @@
   }
   footer .seal{margin-bottom:12px}
   footer .foot-line{margin-top:8px;font-size:11px;letter-spacing:.3em;opacity:.75}
+  .back{margin:20px 0 -6px;text-align:center}
+  .back a{font-size:13px;letter-spacing:.2em;color:var(--lake-deep);text-decoration:none;border-bottom:1px dashed var(--lake-soft);padding-bottom:2px}
+  .back a:hover,.back a:active{border-color:var(--lake-deep)}
+  .home-btn{
+    display:inline-block;
+    margin-top:24px;
+    padding:11px 34px;
+    font-size:13px;
+    letter-spacing:.32em;
+    text-indent:.32em;
+    color:var(--lake-deep);
+    border:1px solid var(--lake-soft);
+    border-radius:999px;
+    text-decoration:none;
+    font-family:inherit;
+    transition:background .25s,color .25s,border-color .25s;
+  }
+  .home-btn:hover,.home-btn:active{background:var(--lake-deep);color:#fff;border-color:var(--lake-deep)}
 </style>
 </head>
 <body>
@@ -125,6 +143,7 @@
 </div>
 
 <div class="wrap">
+  <nav class="back"><a href="index.html">← 回到首页</a></nav>
   <header class="title-wrap">
     <div class="kicker">年 关 · 旧 衣 · 回 忆</div>
     <h1>我的宝贝<span class="seal">宝贝</span></h1>
@@ -177,6 +196,7 @@
     <span class="seal">宝贝</span>
     <div>我的宝贝 · 一件冲锋衣的纪念册</div>
     <div class="foot-line">破 旧 的 衣 服 ， 独 特 的 回 忆</div>
+    <a class="home-btn" href="index.html">回到首页</a>
   </footer>
 </div>
 
