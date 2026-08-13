@@ -94,6 +94,24 @@
   }
   footer .seal{margin-bottom:12px}
   footer .foot-line{margin-top:8px;font-size:11px;letter-spacing:.3em;opacity:.75}
+  .back{margin:20px 0 -6px;text-align:center}
+  .back a{font-size:13px;letter-spacing:.2em;color:var(--lake-deep);text-decoration:none;border-bottom:1px dashed var(--lake-soft);padding-bottom:2px}
+  .back a:hover,.back a:active{border-color:var(--lake-deep)}
+  .home-btn{
+    display:inline-block;
+    margin-top:24px;
+    padding:11px 34px;
+    font-size:13px;
+    letter-spacing:.32em;
+    text-indent:.32em;
+    color:var(--lake-deep);
+    border:1px solid var(--lake-soft);
+    border-radius:999px;
+    text-decoration:none;
+    font-family:inherit;
+    transition:background .25s,color .25s,border-color .25s;
+  }
+  .home-btn:hover,.home-btn:active{background:var(--lake-deep);color:#fff;border-color:var(--lake-deep)}
 </style>
 </head>
 <body>
@@ -124,6 +142,7 @@
 </div>
 
 <div class="wrap">
+  <nav class="back"><a href="index.html">← 回到首页</a></nav>
   <header class="title-wrap">
     <div class="kicker">西 湖 · 晨 光 漫 记</div>
     <h1>湖光晓悟东坡<span class="seal">晓悟</span></h1>
@@ -178,6 +197,7 @@
     <span class="seal">湖光晓悟</span>
     <div>湖光晓悟 · 西湖晨记</div>
     <div class="foot-line">一 淡 一 浓 ， 皆 是 人 生</div>
+    <a class="home-btn" href="index.html">回到首页</a>
   </footer>
 </div>
 
