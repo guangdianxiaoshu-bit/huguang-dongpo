@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#faf3e8">
+<meta name="description" content="一颗满是伤痕的足球，装着小学时代的友谊，和一场迟到的邀约。">
+<title>满是伤痕的足球</title>
+<style>
+  :root{
+    --paper:#faf3e8;
+    --paper-deep:#f1e5cf;
+    --ink:#3d3b36;
+    --ink-soft:#7a7468;
+    --brand:#c26a2f;
+    --brand-deep:#9c4f22;
+    --brand-soft:#e0a97f;
+    --gold:#d99a3d;
+    --line:#e6d6b8;
+    --lake-deep:#9c4f22;
+    --lake-soft:#e0a97f;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","SimSun",serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:2.05;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:0 24px 72px}
+
+  /* ===== 顶部黄昏球场横幅 ===== */
+  .hero{max-width:640px;margin:0 auto}
+  .hero svg{display:block;width:100%;height:auto}
+
+  /* ===== 标题区 ===== */
+  .title-wrap{padding:26px 0 6px;text-align:center}
+  .kicker{font-size:12px;letter-spacing:.55em;text-indent:.55em;color:var(--ink-soft);margin-bottom:16px}
+  h1{
+    font-family:"Kaiti SC","KaiTi","STKaiti","Noto Serif SC",serif;
+    font-weight:600;
+    font-size:36px;
+    letter-spacing:.14em;
+    text-indent:.14em;
+    color:var(--ink);
+    line-height:1.5;
+    display:flex;align-items:center;justify-content:center;gap:10px;
+  }
+  .seal{
+    font-family:"Songti SC","SimSun",serif;
+    font-size:11px;
+    letter-spacing:.12em;
+    text-indent:.12em;
+    color:#b3563a;
+    border:1.5px solid #b3563a;
+    border-radius:4px;
+    padding:2px 5px;
+    transform:rotate(-4deg);
+    opacity:.92;
+  }
+  .title-sub{
+    margin-top:14px;
+    font-size:13px;
+    letter-spacing:.28em;
+    text-indent:.28em;
+    color:var(--ink-soft);
+  }
+
+  /* ===== 正文（统一版式：无首字下沉/无字体变化/仅下划线强调） ===== */
+  article{padding-top:26px}
+  article p{font-size:17.5px;margin:0 0 28px;letter-spacing:.02em;text-align:justify}
+  em.hl{
+    font-style:normal;
+    text-decoration:underline;
+    text-underline-offset:4px;
+  }
+
+  /* ===== 波纹分隔 ===== */
+  .divider{display:flex;align-items:center;justify-content:center;gap:16px;margin:42px 0 36px}
+  .divider::before,.divider::after{
+    content:"";flex:1;max-width:96px;height:1px;
+    background:linear-gradient(90deg,transparent,var(--line),transparent);
+  }
+  .divider svg{width:34px;height:22px;flex-shrink:0}
+
+  /* ===== 页脚 ===== */
+  footer{
+    margin-top:52px;padding-top:26px;
+    border-top:1px solid var(--line);
+    text-align:center;
+    font-size:12.5px;
+    letter-spacing:.22em;
+    color:var(--ink-soft);
+  }
+  footer .seal{margin-bottom:12px}
+  footer .foot-line{margin-top:8px;font-size:11px;letter-spacing:.3em;opacity:.75}
+  .back{margin:20px 0 -6px;text-align:center}
+  .back a{font-size:13px;letter-spacing:.2em;color:var(--lake-deep);text-decoration:none;border-bottom:1px dashed var(--lake-soft);padding-bottom:2px}
+  .back a:hover,.back a:active{border-color:var(--lake-deep)}
+  .home-btn{
+    display:inline-block;
+    margin-top:24px;
+    padding:11px 34px;
+    font-size:13px;
+    letter-spacing:.32em;
+    text-indent:.32em;
+    color:var(--lake-deep);
+    border:1px solid var(--lake-soft);
+    border-radius:999px;
+    text-decoration:none;
+    font-family:inherit;
+    transition:background .25s,color .25s,border-color .25s;
+  }
+  .home-btn:hover,.home-btn:active{background:var(--lake-deep);color:#fff;border-color:var(--lake-deep)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <svg viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="黄昏球场：夕阳、晚霞、远山与球场草纹">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#f2d9ab"/>
+        <stop offset="1" stop-color="#faf3e8"/>
+      </linearGradient>
+      <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+        <stop offset="0" stop-color="#fbe8b8"/>
+        <stop offset="1" stop-color="#ea9e52"/>
+      </radialGradient>
+    </defs>
+    <rect width="1200" height="300" fill="url(#sky)"/>
+    <circle cx="890" cy="92" r="64" fill="#f0c47e" opacity="0.3"/>
+    <circle cx="890" cy="92" r="38" fill="url(#sun)" opacity="0.95"/>
+    <g fill="#f3c690">
+      <path d="M0,140 C200,122 340,150 520,134 C700,118 860,144 1080,128 L1200,124 L1200,150 L0,150 Z" opacity="0.5"/>
+      <path d="M0,176 C260,158 460,184 720,166 C920,152 1060,174 1200,164 L1200,190 L0,190 Z" opacity="0.38"/>
+    </g>
+    <path d="M0,182 C150,146 260,166 400,136 C540,106 660,148 800,126 C940,104 1060,138 1200,110 L1200,300 L0,300 Z" fill="#d8a877" opacity="0.7"/>
+    <path d="M0,218 C160,190 300,206 450,186 C600,166 740,202 900,182 C1030,166 1140,188 1200,176 L1200,300 L0,300 Z" fill="#b9784a" opacity="0.85"/>
+    <path d="M0,258 C200,238 380,252 560,238 C740,224 900,244 1200,228 L1200,300 L0,300 Z" fill="#8a6a42"/>
+    <g stroke="#f3e6cf" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.9">
+      <path d="M120,282 C240,274 340,288 460,280 C580,272 700,286 820,278"/>
+      <path d="M260,294 C380,286 480,300 600,292 C720,284 840,298 960,290"/>
+    </g>
+  </svg>
+</div>
+
+<div class="wrap">
+  <nav class="back"><a href="index.html">← 回到首页</a></nav>
+  <header class="title-wrap">
+    <div class="kicker">黄 昏 · 球 场 · 旧 时 光</div>
+    <h1>满是伤痕的足球<span class="seal">足球</span></h1>
+    <div class="title-sub">一颗旧球，一场迟到的邀约</div>
+  </header>
+
+  <article>
+    <p>“叮——”消息来了，我略带紧张的看向手机。上面弹出一条消息：<em class="hl">“好啊，你小子可算想起我了！”</em></p>
+
+    <p>“太棒了!”我高兴地拿起那颗满是伤痕的足球，嘴角扯起微笑，心想，这家伙，还跟以前一样。抬头远望，太阳已经下山，天边淡淡余晖，霞光洒在球场上，真美。</p>
+
+    <p>这颗球是那家伙送我的礼物——或者说是赔偿。四年级的时候，我约他一块儿到足球场踢球，千叮咛万嘱咐，这颗球是新买的，一定要注意，别把球踢到一边的小河里去了。可那天他玩疯了，大喊着“看我凌空抽射！”——“砰！”一脚就把球踢河里去了。</p>
+
+    <p>“还我球来！”我满球场追打他，大发雷霆，再看他满不在乎的态度——<em class="hl">“我又不是故意的”</em>——我一时气急了，发了毒誓要绝交，现在看来，那真是件平常的事，当时我真是小孩子气。</p>
+
+    <p>“绝交就绝交！”他看我放狠话，也变了脸色，我俩不欢而散。</p>
+
+    <p>后面几天，他想来跟我搭话，我都不理他，没几天到了我的生日，上学路上开开心心的，可进了校门就看见了他，我心里马上就来气了，故意绕开他走，他却死皮赖脸的又跟上来，还绕到我身旁看我：“哟，真生气了？放学去踢球不？”“球都没了，踢个啥呀！”见他还敢提球的事，我的语气又硬又冲。</p>
+
+    <p><em class="hl">“今天不是你生日吗？这个球赔给你。”</em>说完，他反手从包里掏出一个球，跟之前那个一模一样！“今天就一起去踢，这几天都没人和我踢球，闲死我了。”我又气又笑，说不出话，伸手捶了他一下，心想着：“唉，总是这样，算了，这次原谅这小子了。”</p>
+
+    <p>时间像滚动的足球，一转眼就进了“毕业”的球门。毕业后的暑假，烈日无情扫射地面，抽打地面上的人们。我在球场与他踢球，这颗球已有了许多痕迹：接线处有了几处开线，几处皮革已经磨损，表面的色彩也变得暗淡了。我跟他都满身是汗，球衣紧紧贴在身上，头发晒得发烫，可我俩丝毫不受影响，你一脚我一脚，球场充斥着欢声笑语。突然，仿佛情景重现，他哈哈大笑着一脚抽射。球贴着地面急速滚动，我赶忙追去，“哎呀，不好，球又要没了！”</p>
+
+    <p>我屏住呼吸跑去救球，可太阳狠狠地按住我，腿跟灌了铅一样，完全迈不动，神奇的是，球自己慢了下来，和我一样被太阳阻住了似的。它就那样停在了人行道和河岸的交界处。远处，我听到他长长的舒了一口气……又玩了一会儿，他得先走了，我俩就这样分开。“下次再约？”“嗯！下次再约。”我抱着球，跟他挥手告别，才发现上面多了一长条黑色的磨损，是为小学生活画上的一个感叹号。</p>
+
+    <div class="divider" aria-hidden="true">
+      <svg viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2,6 C8,1 14,11 17,6 C20,1 26,11 32,6" stroke="#e0a97f" stroke-width="2" stroke-linecap="round"/>
+        <path d="M2,14 C8,9 14,19 17,14 C20,9 26,19 32,14" stroke="#ecc9a6" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <p>补习班、毕业旅行、初中陡增的课业压力。我俩去了不同的初中，我中间约了他几次，可总也约不上，渐渐地，我们也“失联”了。</p>
+
+    <p>在初中，我经常和同学们踢球，可总觉得少了些什么。一起踢球的人更多了，技术更好了，对抗更激烈了，但总是心里空空的。没有人会故意撞我，然后贱兮兮地说要训练我的“抗压能力”，也不会有人会在课间跑过来，跟我分享最近的新动画，新游戏。他应该交到新朋友了吧，我想。</p>
+
+    <div class="divider" aria-hidden="true">
+      <svg viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2,6 C8,1 14,11 17,6 C20,1 26,11 32,6" stroke="#e0a97f" stroke-width="2" stroke-linecap="round"/>
+        <path d="M2,14 C8,9 14,19 17,14 C20,9 26,19 32,14" stroke="#ecc9a6" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <p>今天和初中同学去那座球场踢球，不用我提醒，大家都自觉地远离小河的方向，没人会把球踢出场，也再不会有人满不在乎地说<em class="hl">“我又不是故意的”</em>。</p>
+
+    <p>“拜拜，下次见。今天真开心，下次再一起踢球。”我挥手跟同学们告别，散场后，他们三三两两地结伴走了，我还留在球场。抬头看看远方天空，太阳快下山了，天边的紫色晚霞镶着金边。我用脚尖踢了踢那颗球，点开微信里他的头像，上一条消息还是“新年快乐”。</p>
+
+    <p>我咽了口唾沫，稳住微微颤抖的手，发出一行文字。</p>
+
+    <p><em class="hl">“明天，老地方，来踢球啊。”</em></p>
+  </article>
+
+  <footer>
+    <span class="seal">足球</span>
+    <div>满是伤痕的足球 · 老地方的邀约</div>
+    <div class="foot-line">明 天 ， 老 地 方 ， 来 踢 球 啊</div>
+    <a class="home-btn" href="index.html">回到首页</a>
+  </footer>
+</div>
+
+</body>
+</html>
