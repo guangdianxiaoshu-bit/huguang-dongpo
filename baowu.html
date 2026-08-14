@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f6f8f3">
+<meta name="description" content="一方小小的玻璃鱼缸，游着小鱼，盛着阳光，更装着妈妈藏在细碎日常里的爱。">
+<title>我的宝物</title>
+<style>
+  :root{
+    --paper:#f6f8f3;
+    --paper-deep:#e9efe8;
+    --ink:#3d3b36;
+    --ink-soft:#7a7468;
+    --brand:#4a7c8c;
+    --brand-deep:#35606e;
+    --brand-soft:#9cc0cb;
+    --gold:#d99a3d;
+    --line:#d8e2da;
+    --lake-deep:#35606e;
+    --lake-soft:#9cc0cb;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","SimSun",serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:2.05;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:0 24px 72px}
+
+  /* ===== 顶部阳光水面横幅 ===== */
+  .hero{max-width:640px;margin:0 auto}
+  .hero svg{display:block;width:100%;height:auto}
+
+  /* ===== 标题区 ===== */
+  .title-wrap{padding:26px 0 6px;text-align:center}
+  .kicker{font-size:12px;letter-spacing:.55em;text-indent:.55em;color:var(--ink-soft);margin-bottom:16px}
+  h1{
+    font-family:"Kaiti SC","KaiTi","STKaiti","Noto Serif SC",serif;
+    font-weight:600;
+    font-size:36px;
+    letter-spacing:.14em;
+    text-indent:.14em;
+    color:var(--ink);
+    line-height:1.5;
+    display:flex;align-items:center;justify-content:center;gap:10px;
+  }
+  .seal{
+    font-family:"Songti SC","SimSun",serif;
+    font-size:11px;
+    letter-spacing:.12em;
+    text-indent:.12em;
+    color:#b3563a;
+    border:1.5px solid #b3563a;
+    border-radius:4px;
+    padding:2px 5px;
+    transform:rotate(-4deg);
+    opacity:.92;
+  }
+  .title-sub{
+    margin-top:14px;
+    font-size:13px;
+    letter-spacing:.28em;
+    text-indent:.28em;
+    color:var(--ink-soft);
+  }
+
+  /* ===== 正文（统一版式：无首字下沉/无字体变化/仅下划线强调） ===== */
+  article{padding-top:26px}
+  article p{font-size:17.5px;margin:0 0 28px;letter-spacing:.02em;text-align:justify}
+  em.hl{
+    font-style:normal;
+    text-decoration:underline;
+    text-underline-offset:4px;
+  }
+
+  /* ===== 波纹分隔 ===== */
+  .divider{display:flex;align-items:center;justify-content:center;gap:16px;margin:42px 0 36px}
+  .divider::before,.divider::after{
+    content:"";flex:1;max-width:96px;height:1px;
+    background:linear-gradient(90deg,transparent,var(--line),transparent);
+  }
+  .divider svg{width:34px;height:22px;flex-shrink:0}
+
+  /* ===== 页脚 ===== */
+  footer{
+    margin-top:52px;padding-top:26px;
+    border-top:1px solid var(--line);
+    text-align:center;
+    font-size:12.5px;
+    letter-spacing:.22em;
+    color:var(--ink-soft);
+  }
+  footer .seal{margin-bottom:12px}
+  footer .foot-line{margin-top:8px;font-size:11px;letter-spacing:.3em;opacity:.75}
+  .back{margin:20px 0 -6px;text-align:center}
+  .back a{font-size:13px;letter-spacing:.2em;color:var(--lake-deep);text-decoration:none;border-bottom:1px dashed var(--lake-soft);padding-bottom:2px}
+  .back a:hover,.back a:active{border-color:var(--lake-deep)}
+  .home-btn{
+    display:inline-block;
+    margin-top:24px;
+    padding:11px 34px;
+    font-size:13px;
+    letter-spacing:.32em;
+    text-indent:.32em;
+    color:var(--lake-deep);
+    border:1px solid var(--lake-soft);
+    border-radius:999px;
+    text-decoration:none;
+    font-family:inherit;
+    transition:background .25s,color .25s,border-color .25s;
+  }
+  .home-btn:hover,.home-btn:active{background:var(--lake-deep);color:#fff;border-color:var(--lake-deep)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <svg viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="阳光水面：太阳、远山、水波与两条小鱼">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#dcecf2"/>
+        <stop offset="1" stop-color="#f6f8f3"/>
+      </linearGradient>
+      <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+        <stop offset="0" stop-color="#fbe8b8"/>
+        <stop offset="1" stop-color="#e8b36a"/>
+      </radialGradient>
+    </defs>
+    <rect width="1200" height="300" fill="url(#sky)"/>
+    <circle cx="920" cy="80" r="60" fill="#efd29a" opacity="0.25"/>
+    <circle cx="920" cy="80" r="34" fill="url(#sun)" opacity="0.92"/>
+    <path d="M0,172 C150,136 260,156 400,128 C540,100 660,140 800,118 C940,96 1060,130 1200,104 L1200,300 L0,300 Z" fill="#b8cdd6" opacity="0.7"/>
+    <path d="M0,210 C160,182 300,198 450,178 C600,158 740,194 900,174 C1030,158 1140,180 1200,168 L1200,300 L0,300 Z" fill="#8fb2bf" opacity="0.85"/>
+    <path d="M0,252 C200,234 380,248 560,234 C740,220 900,240 1200,224 L1200,300 L0,300 Z" fill="#5f8fa0"/>
+    <g fill="#3f6d7d" opacity="0.7">
+      <ellipse cx="330" cy="266" rx="16" ry="6"/>
+      <polygon points="346,266 358,259 358,273"/>
+      <ellipse cx="866" cy="278" rx="13" ry="5"/>
+      <polygon points="852,278 841,272 841,284"/>
+    </g>
+    <g stroke="#eaf3f0" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.9">
+      <path d="M120,282 C240,274 340,288 460,280 C580,272 700,286 820,278"/>
+      <path d="M260,294 C380,286 480,300 600,292 C720,284 840,298 960,290"/>
+    </g>
+  </svg>
+</div>
+
+<div class="wrap">
+  <nav class="back"><a href="index.html">← 回到首页</a></nav>
+  <header class="title-wrap">
+    <div class="kicker">鱼 缸 · 阳 光 · 小 鱼</div>
+    <h1>我的宝物<span class="seal">宝物</span></h1>
+    <div class="title-sub">一方鱼缸，盛着阳光与爱</div>
+  </header>
+
+  <article>
+    <p>柜子上面，一方玻璃鱼缸静静立着。细碎的阳光透过玻璃洒向水面，晕开层层晃动的光斑。缸壁内浮着浅浅的水痕，里面还有几丝嫩青苔。圆润的鹅卵石沉在水底，几条小鱼摆着鱼尾穿梭其间。</p>
+
+    <p>这是我生日时，妈妈送给我的礼物。那天妈妈刚回到家，就“鬼鬼祟祟”地从背后掏出一个礼物盒，压低声音说：<em class="hl">“宝贝，猜猜这是什么？”</em>她说悄悄话的声音好玩极了，我也压低了声音，轻轻地说：“妈妈，是玩具吗？”</p>
+
+    <p>妈妈笑着摇摇头，“不对。”我猜了几次都没猜中，妈妈哈哈一笑，把礼物盒往我怀里一塞，“你自己拆开看看吧!”</p>
+
+    <p>没想到妈妈都看在眼里了。我看着礼物盒里面精致的小鱼缸，想起之前路过水族店，我在鱼缸边上仰着头看了好久，那些热带鱼真漂亮啊，可是我怕自己养不好，就没跟妈妈提要求，没想到……<em class="hl">“谢谢妈妈！”</em>我大声说，小心翼翼地把它搬到柜子上，没想到妈妈又从背后拿出一个塑料袋，里面是几条鲜艳的小鱼，我迫不及待地把小鱼放进去。满眼都是新奇与欢喜。</p>
+
+    <div class="divider" aria-hidden="true">
+      <svg viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2,6 C8,1 14,11 17,6 C20,1 26,11 32,6" stroke="#9cc0cb" stroke-width="2" stroke-linecap="round"/>
+        <path d="M2,14 C8,9 14,19 17,14 C20,9 26,19 32,14" stroke="#bcd6de" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <p>照料鱼缸成了我每天的功课，喂食、清理、定时换水，看似平常，却让我感受到一种叫做“责任”的东西。</p>
+
+    <p>记得有一次，我和妈妈闹了矛盾，我们谁也不肯先说话，我把自己锁进房间，不肯出去，怕跟她面对面，可是后来我发现，妈妈在帮我给鱼换水，还把玻璃给擦干净了。“今天早上我喂过小鱼了。”当妈妈从柜子里拿出鱼食，准备喂的时候，我出声提醒她。“嗯。”妈妈的动作停住，没有回头，过了几秒，她说：<em class="hl">“你看，这条小鱼是不是又肥了？”</em>我走上前去，轻轻握住妈妈的手，轻声说：“对啊，它最能吃了……你看那条躲在石头后面的……”在小鱼的见证下，我们的冷战就这么结束了。</p>
+
+    <div class="divider" aria-hidden="true">
+      <svg viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2,6 C8,1 14,11 17,6 C20,1 26,11 32,6" stroke="#9cc0cb" stroke-width="2" stroke-linecap="round"/>
+        <path d="M2,14 C8,9 14,19 17,14 C20,9 26,19 32,14" stroke="#bcd6de" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <p>我每天都细心擦玻璃，打理水质，守护着这片小小天地，偶尔和妈妈商量下，要不要加条小鱼，要不要加几株水草。妈妈听着我滔滔不绝的计划，光线透过鱼缸，映在她的眼底，泛起温柔的笑意。</p>
+
+    <p><em class="hl">我的宝物，就是这方小小的鱼缸。</em>里面游着小鱼，盛着阳光，更装着妈妈藏在细碎日常里的爱。</p>
+  </article>
+
+  <footer>
+    <span class="seal">宝物</span>
+    <div>我的宝物 · 一方鱼缸</div>
+    <div class="foot-line">小 鱼 游 着 ， 阳 光 盛 着 ， 爱 藏 着</div>
+    <a class="home-btn" href="index.html">回到首页</a>
+  </footer>
+</div>
+
+</body>
+</html>
